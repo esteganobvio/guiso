@@ -22,6 +22,7 @@ modules:
       - borgbackup
       - fastfetch
       - lm_sensors
+      - https://github.com/k3s-io/k3s-selinux/releases/download/v1.6.latest.1/k3s-selinux-1.6-1.coreos.noarch.rpm
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
