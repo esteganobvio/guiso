@@ -26,6 +26,8 @@ modules:
       - tuned
       - tuned-profiles-atomic
       - powertop
+      - btop
+      - nvtop
 
   - type: script
     scripts:
