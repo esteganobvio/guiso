@@ -34,6 +34,8 @@ jobs:
         uses: blue-build/github-action@v1.13
         with:
           recipe: ${{ matrix.recipe }}
+          # publish chunked OCI images so updates only download changed chunks
+          build_chunked_oci: true
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
